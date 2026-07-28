@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Recuperar Senha - Apex</title>
+
+  <link rel="icon" type="image/png" href="imagens/ChatGPT Image 28 de jul. de 2026, 15_02_54.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -14,8 +16,8 @@
 
   <main class="forgot-card">
     <header class="forgot-header">
-      <div class="logo">
-        <i class="fa-solid fa-key"></i>
+      <div class="logo-container" style="text-align: center; margin-bottom: 16px;">
+        <img src="imagens/ChatGPT Image 28 de jul. de 2026, 15_02_54.png" alt="Logo Apex" style="max-width: 150px; height: auto; display: inline-block;" />
       </div>
       <h1>Recuperar Senha</h1>
       <p>Digite seu e-mail cadastrado para receber as instruções de redefinição.</p>
@@ -32,12 +34,11 @@
           <input type="email" id="email" placeholder="seuemail@exemplo.com" required />
         </div>
       </div>
-<!-- CÓDIGO CORRETO -->
-     <button type="submit" class="btn-submit" id="btnSubmit">
-         <span>Enviar Instruções</span>
-         <i class="fa-solid fa-paper-plane"></i>
-     </button>
 
+      <button type="submit" class="btn-submit" id="btnSubmit">
+        <span>Enviar Instruções</span>
+        <i class="fa-solid fa-paper-plane"></i>
+      </button>
     </form>
 
     <footer class="forgot-footer">
