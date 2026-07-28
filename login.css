@@ -12,11 +12,11 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #000000; /* Preto Puro */
+  background-color: #000000; 
   padding: 20px;
 }
 
-/* Card Minimalista Preto / Grafite */
+
 .login-card {
   background: #0d0d0d;
   width: 100%;
@@ -33,7 +33,7 @@ body {
   margin-bottom: 28px;
 }
 
-/* Ícone discreto */
+
 .logo {
   display: inline-flex;
   align-items: center;
@@ -44,7 +44,7 @@ body {
   border: 1px solid #262626;
   border-radius: 10px;
   font-size: 22px;
-  color: #10b981; /* Detalhe em verde */
+  color: #10b981; 
   margin-bottom: 16px;
 }
 
@@ -60,7 +60,6 @@ body {
   font-size: 13px;
 }
 
-/* Botões Sociais em tom escuro discreto */
 .social-login {
   display: flex;
   gap: 12px;
@@ -90,7 +89,7 @@ body {
   color: #ffffff;
 }
 
-/* Divisor sutil */
+
 .divider {
   display: flex;
   align-items: center;
@@ -112,7 +111,6 @@ body {
   padding: 0 10px;
 }
 
-/* Alerta de erro */
 .error-alert {
   background: rgba(239, 68, 68, 0.1);
   border: 1px solid #7f1d1d;
@@ -123,7 +121,7 @@ body {
   margin-bottom: 18px;
 }
 
-/* Inputs discretos com foco em verde */
+
 .input-field {
   margin-bottom: 18px;
 }
@@ -162,7 +160,7 @@ body {
   transition: all 0.2s;
 }
 
-/* Efeito de Foco com o detalhe verde */
+
 .input-wrapper input:focus {
   border-color: #10b981;
 }
@@ -186,7 +184,7 @@ body {
   color: #10b981;
 }
 
-/* Opções e Links */
+
 .form-options {
   display: flex;
   justify-content: space-between;
@@ -204,7 +202,7 @@ body {
 }
 
 .remember-me input {
-  accent-color: #10b981; /* Checkbox verde */
+  accent-color: #10b981; 
 }
 
 .forgot-pass {
@@ -217,11 +215,11 @@ body {
   color: #10b981;
 }
 
-/* Botão principal em verde escuro solido */
+
 .btn-submit {
   width: 100%;
   padding: 12px;
-  background: #059669; /* Verde esmeralda sólido */
+  background: #059669;
   color: #ffffff;
   border: none;
   border-radius: 6px;
@@ -236,14 +234,14 @@ body {
 }
 
 .btn-submit:hover {
-  background: #047857; /* Verde um pouco mais escuro no hover */
+  background: #047857; 
 }
 
 .btn-submit:active {
   transform: scale(0.99);
 }
 
-/* Rodapé */
+
 .login-footer {
   margin-top: 24px;
   text-align: center;
