@@ -10,11 +10,10 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #000000; /* Preto Puro */
+  background-color: #000000;
   padding: 20px;
 }
 
-/* Card Minimalista Preto / Grafite */
 .forgot-card {
   background: #0d0d0d;
   width: 100%;
@@ -31,7 +30,7 @@ body {
   margin-bottom: 24px;
 }
 
-/* Ícone discreto */
+
 .logo {
   display: inline-flex;
   align-items: center;
@@ -42,7 +41,7 @@ body {
   border: 1px solid #262626;
   border-radius: 10px;
   font-size: 20px;
-  color: #10b981; /* Detalhe em verde */
+  color: #10b981; 
   margin-bottom: 16px;
 }
 
@@ -59,7 +58,6 @@ body {
   line-height: 1.5;
 }
 
-/* Alertas */
 .alert {
   padding: 10px 14px;
   border-radius: 6px;
@@ -80,7 +78,7 @@ body {
   color: #6ee7b7;
 }
 
-/* Inputs discretos com foco em verde */
+
 .input-field {
   margin-bottom: 24px;
 }
@@ -119,7 +117,7 @@ body {
   transition: all 0.2s;
 }
 
-/* Efeito de Foco com detalhe verde */
+
 .input-wrapper input:focus {
   border-color: #10b981;
 }
@@ -128,11 +126,11 @@ body {
   color: #10b981;
 }
 
-/* Botão principal em verde sólido */
+
 .btn-submit {
   width: 100%;
   padding: 12px;
-  background: #059669; /* Verde esmeralda sólido */
+  background: #059669; 
   color: #ffffff;
   border: none;
   border-radius: 6px;
@@ -154,7 +152,7 @@ body {
   transform: scale(0.99);
 }
 
-/* Rodapé */
+
 .forgot-footer {
   margin-top: 24px;
   text-align: center;
