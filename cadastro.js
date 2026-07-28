@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const strengthBar = document.getElementById('strengthBar');
   const strengthText = document.getElementById('strengthText');
 
-  // Alternar Mostrar/Ocultar Senha
+ 
   document.querySelectorAll('.btn-toggle-pass').forEach(button => {
     button.addEventListener('click', () => {
       const targetId = button.getAttribute('data-target');
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Medidor de Força da Senha
+  
   passwordInput.addEventListener('input', () => {
     const value = passwordInput.value;
 
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Submissão do Formulário e Redirecionamento
+ 
   registerForm.addEventListener('submit', (e) => {
     e.preventDefault();
     hideAlerts();
@@ -74,7 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const password = passwordInput.value;
     const confirmPassword = confirmPasswordInput.value;
 
-    // Validações básicas antes de redirecionar
     if (!fullname || !email || !password || !confirmPassword) {
       showError('Por favor, preencha todos os campos.');
       return;
@@ -105,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    // Exibe mensagem de sucesso rápida e redireciona para o login
+    
     showSuccess('Cadastro realizado! Redirecionando para a página de login...');
 
     setTimeout(() => {
