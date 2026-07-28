@@ -15,23 +15,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const email = emailInput.value.trim();
 
-    // Validação de preenchimento
+  
     if (!email) {
       showError('Por favor, digite seu e-mail.');
       return;
     }
 
-    // Validação de formato de e-mail
+  
     if (!isValidEmail(email)) {
       showError('Por favor, digite um e-mail válido (ex: nome@dominio.com).');
       return;
     }
 
-    // Mensagem de sucesso
+  
     showSuccess('Instruções enviadas! Redirecionando para o login...');
     emailInput.value = '';
 
-    // Redireciona para a página de login após 1.5 segundo
+ 
     setTimeout(() => {
       window.location.href = 'login.html';
     }, 1500);
