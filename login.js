@@ -5,17 +5,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const eyeIcon = document.getElementById('eyeIcon');
   const errorAlert = document.getElementById('errorAlert');
 
-  // 1. Mostrar/Ocultar Senha
+ 
   togglePasswordBtn.addEventListener('click', () => {
     const isPassword = passwordInput.getAttribute('type') === 'password';
     passwordInput.setAttribute('type', isPassword ? 'text' : 'password');
     
-    // Troca o ícone de olho
+  
     eyeIcon.classList.toggle('fa-eye', !isPassword);
     eyeIcon.classList.toggle('fa-eye-slash', isPassword);
   });
 
-  // 2. Submissão e Validação do Formulário
+ 
   loginForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
@@ -23,10 +23,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const password = passwordInput.value.trim();
     const remember = document.getElementById('remember').checked;
 
-    // Reset de erro anterior
+   
     hideError();
 
-    // Validação básica
+ 
     if (!email || !password) {
       showError('Por favor, preencha todos os campos.');
       return;
@@ -42,12 +42,11 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    // Sucesso (simulação)
     console.log('Login solicitado:', { email, remember });
     alert('Login realizado com sucesso!');
   });
 
-  // Funções Auxiliares
+
   function showError(message) {
     errorAlert.textContent = message;
     errorAlert.style.display = 'block';
@@ -66,7 +65,9 @@ document.addEventListener('DOMContentLoaded', () => {
 const btnRegister = document.getElementById('btnRegister');
 
 btnRegister.addEventListener('click', (e) => {
-  e.preventDefault(); // Impede de subir para o topo da página por causa do #
+  e.preventDefault(); 
   alert('Redirecionando para a tela de cadastro...');
 });
+
+
 
