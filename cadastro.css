@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #000000; /* Preto Puro */
+  padding: 20px;
+}
+
+/* Card Minimalista Preto / Grafite */
+.register-card {
+  background: #0d0d0d;
+  width: 100%;
+  max-width: 440px;
+  border-radius: 12px;
+  padding: 36px 40px;
+  border: 1px solid #1a1a1a;
+  color: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
+}
+
+.register-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+/* Ícone discreto */
+.logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: #141414;
+  border: 1px solid #262626;
+  border-radius: 10px;
+  font-size: 22px;
+  color: #10b981; /* Detalhe em verde */
+  margin-bottom: 12px;
+}
+
+.register-header h1 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #ffffff;
+}
+
+.register-header p {
+  color: #888888;
+  font-size: 13px;
+}
+
+/* Botões Sociais em tom escuro discreto */
+.social-register {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.btn-social {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #262626;
+  background: #141414;
+  color: #cccccc;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-social:hover {
+  background: #1f1f1f;
+  border-color: #333333;
+  color: #ffffff;
+}
+
+/* Divisor sutil */
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 18px 0;
+  color: #555555;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.divider::before, .divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #222222;
+}
+
+.divider span {
+  padding: 0 10px;
+}
+
+/* Alertas */
+.alert {
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  margin-bottom: 18px;
+  display: none;
+}
+
+.alert-error {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid #7f1d1d;
+  color: #fca5a5;
+}
+
+.alert-success {
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid #064e3b;
+  color: #6ee7b7;
+}
+
+/* Inputs discretos com foco em verde */
+.input-field {
+  margin-bottom: 16px;
+}
+
+.input-field label {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  color: #aaaaaa;
+  margin-bottom: 6px;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  position: absolute;
+  left: 14px;
+  color: #555555;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 11px 14px 11px 38px;
+  background: #141414;
+  border: 1px solid #262626;
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.2s;
+}
+
+/* Efeito de Foco com o detalhe verde */
+.input-wrapper input:focus {
+  border-color: #10b981;
+}
+
+.input-wrapper input:focus ~ .input-icon {
+  color: #10b981;
+}
+
+.btn-toggle-pass {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  color: #555555;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-toggle-pass:hover {
+  color: #10b981;
+}
+
+/* Medidor de Força da Senha */
+.password-strength {
+  margin-top: 6px;
+  display: none;
+}
+
+.strength-bar-container {
+  height: 4px;
+  background: #262626;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+
+.strength-bar {
+  height: 100%;
+  width: 0%;
+  transition: width 0.3s, background-color 0.3s;
+}
+
+.strength-text {
+  font-size: 11px;
+  color: #888888;
+}
+
+/* Checkbox Termos */
+.terms-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  color: #888888;
+}
+
+.terms-option input {
+  margin-top: 2px;
+  accent-color: #10b981;
+  cursor: pointer;
+}
+
+.terms-option a {
+  color: #10b981;
+  text-decoration: none;
+}
+
+.terms-option a:hover {
+  text-decoration: underline;
+}
+
+/* Botão principal em verde escuro sólido */
+.btn-submit {
+  width: 100%;
+  padding: 12px;
+  background: #059669; /* Verde esmeralda sólido */
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background-color 0.2s;
+}
+
+.btn-submit:hover {
+  background: #047857;
+}
+
+.btn-submit:active {
+  transform: scale(0.99);
+}
+
+/* Rodapé */
+.register-footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: #666666;
+}
+
+.register-footer a {
+  color: #10b981;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.register-footer a:hover {
+  text-decoration: underline;
+}
